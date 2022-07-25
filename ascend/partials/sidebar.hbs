@@ -1,0 +1,39 @@
+<span id="mobile-menu-ignite-asnd">
+	<i class="fa fa-reorder"></i>
+	<i class="fa fa-arrow-left"></i>
+</span>
+
+<header id="main-head-asnd">
+	<div id="head-wrapper-asnd">
+
+		{{#if @blog.logo}}
+		<a href="{{@blog.url}}">
+		<img id="main-logo-asnd" src="{{@blog.logo}}" alt="{{@blog.title}}">
+		</a>
+		{{else}}
+		<h1 id="main-name-asnd"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		{{/if}}
+
+		{{#if @blog.description}}
+		<p id="the-description-asnd">
+			{{@blog.description}}
+		</p>
+		{{/if}}
+
+		<nav id="main-nav-asnd">
+			{{navigation}}
+		</nav>
+
+		<ul id="social-links-head-asnd">
+			{{#if @blog.twitter}}
+				<li><a href="{{twitter_url}}" class="twitter fa fa-twitter"></a></li>
+			{{/if}}
+			{{#if @blog.facebook}}
+				<li><a href="{{facebook_url}}" class="facebook fa fa-facebook"></a></li>
+			{{/if}}
+		</ul>
+
+		<section id="widgets-area-a" class="widgets-area"></section>
+
+	</div>
+</header>
